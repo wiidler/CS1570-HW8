@@ -1,9 +1,4 @@
-#include "constants.h"
 #include "card.h"
-#include "deck.h"
-#include <iostream>
-
-using namespace std;
 
 /***********************FUNCTION DEFINITIONS***********************/
 // Constructors

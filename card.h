@@ -15,7 +15,6 @@ using namespace std;
 
 
 /***********************CLASS DEFINITIONS***********************/
-
 class Card{
     public:
         // Constructors

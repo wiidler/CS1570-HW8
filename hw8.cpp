@@ -5,9 +5,8 @@
 // Assignment: HW 8
 // Purpose: This program contains WAR, a simple two player card game.
 
-#include "constants.h"
-#include "deck.h"
 #include "card.h"
+#include "deck.h"
 #include <iostream>
 using namespace std;
 
