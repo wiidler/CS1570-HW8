@@ -1,7 +1,6 @@
-#ifndef CARD_H
-#define CARD_H
+#ifndef CARDCLASS_H
+#define CARDCLASS_H
 
-#include "deck.h"
 #include "constants.h"
 #include <iostream>
 using namespace std;
@@ -12,7 +11,6 @@ using namespace std;
 // Description: 
 // Pre: 
 // Post: 
-
 
 /***********************CLASS DEFINITIONS***********************/
 class Card{
@@ -32,11 +30,9 @@ class Card{
         void operator~();
         // Friend Functions
         friend ostream & operator<<(ostream & os, const Card & card);
-
     private:
         char m_value;
         char m_suit;
         bool m_destroyed;
 };
-
 #endif

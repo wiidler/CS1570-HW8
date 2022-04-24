@@ -1,4 +1,4 @@
-#include "deck.h"
+#include "deckclass.h"
 
 /***********************FUNCTION DEFINITIONS***********************/
 // Constructors

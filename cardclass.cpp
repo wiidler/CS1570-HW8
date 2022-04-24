@@ -1,4 +1,4 @@
-#include "card.h"
+#include "cardclass.h"
 
 /***********************FUNCTION DEFINITIONS***********************/
 // Constructors

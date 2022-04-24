@@ -1,7 +1,7 @@
-#ifndef DECK_H  
-#define DECK_H
+#ifndef DECKCLASS_H  
+#define DECKCLASS_H
 
-#include "card.h"
+#include "cardclass.h"
 #include "constants.h"
 #include <iostream>
 using namespace std;

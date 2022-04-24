@@ -5,8 +5,8 @@
 // Assignment: HW 8
 // Purpose: This program contains WAR, a simple two player card game.
 
-#include "card.h"
-#include "deck.h"
+#include "cardclass.h"
+#include "deckclass.h"
 #include <iostream>
 using namespace std;
 
@@ -19,14 +19,8 @@ int main(){
     cin >> player1Name;
     cout << endl << "Input attacker name:" << endl;
     cin >> player2Name;
-    cout << endl << "Battle commence!" << endl;
     Deck playDeck;
-    for(int i = 0; i < MAXARRAY; i++){
-        cout << playDeck.getCard(i);
-    }
     playDeck.shuffle(MAXARRAY);
-    for(int i = 0; i < MAXARRAY; i++){
-        cout << playDeck.getCard(i);
-    }
+    cout << endl << "Battle commence!" << endl;
     return 0;
 }
