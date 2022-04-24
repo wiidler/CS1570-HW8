@@ -45,14 +45,19 @@ bool Card::operator>(const Card & card){
         switch(m_value){
             case ACE:
                 firstCardValue = 1;
+                break;
             case TEN:
                 firstCardValue = 10;
+                break;
             case JACK:
                 firstCardValue = 11;
+                break;
             case QUEEN:
                 firstCardValue = 12;
+                break;
             case KING:
                 firstCardValue = 13;
+                break;
         }
     }
     else{
@@ -62,14 +67,19 @@ bool Card::operator>(const Card & card){
         switch(m_value){
             case ACE:
                 secondCardValue = 1;
+                break;
             case TEN:
                 secondCardValue = 10;
+                break;
             case JACK:
                 secondCardValue = 11;
+                break;
             case QUEEN:
                 secondCardValue = 12;
+                break;
             case KING:
                 secondCardValue = 13;
+                break;
         }
     }
     else{
@@ -99,14 +109,19 @@ bool Card::operator<(const Card & card){
         switch(m_value){
             case ACE:
                 firstCardValue = 1;
+                break;
             case TEN:
                 firstCardValue = 10;
+                break;
             case JACK:
                 firstCardValue = 11;
+                break;
             case QUEEN:
                 firstCardValue = 12;
+                break;
             case KING:
                 firstCardValue = 13;
+                break;
         }
     }
     else{
@@ -116,14 +131,19 @@ bool Card::operator<(const Card & card){
         switch(m_value){
             case ACE:
                 secondCardValue = 1;
+                break;
             case TEN:
                 secondCardValue = 10;
+                break;
             case JACK:
                 secondCardValue = 11;
+                break;
             case QUEEN:
                 secondCardValue = 12;
+                break;
             case KING:
                 secondCardValue = 13;
+                break;
         }
     }
     else{
@@ -153,14 +173,19 @@ bool Card::operator==(const Card & card){
         switch(m_value){
             case ACE:
                 firstCardValue = 1;
+                break;
             case TEN:
                 firstCardValue = 10;
+                break;
             case JACK:
                 firstCardValue = 11;
+                break;
             case QUEEN:
                 firstCardValue = 12;
+                break;
             case KING:
                 firstCardValue = 13;
+                break;
         }
     }
     else{
@@ -170,14 +195,19 @@ bool Card::operator==(const Card & card){
         switch(m_value){
             case ACE:
                 secondCardValue = 1;
+                break;
             case TEN:
                 secondCardValue = 10;
+                break;
             case JACK:
                 secondCardValue = 11;
+                break;
             case QUEEN:
                 secondCardValue = 12;
+                break;
             case KING:
                 secondCardValue = 13;
+                break;
         }
     }
     if(firstCardValue == secondCardValue){
@@ -194,14 +224,19 @@ bool Card::operator!=(const Card & card){
         switch(m_value){
             case ACE:
                 firstCardValue = 1;
+                break;
             case TEN:
                 firstCardValue = 10;
+                break;
             case JACK:
                 firstCardValue = 11;
+                break;
             case QUEEN:
                 firstCardValue = 12;
+                break;
             case KING:
                 firstCardValue = 13;
+                break;
         }
     }
     else{
@@ -211,14 +246,19 @@ bool Card::operator!=(const Card & card){
         switch(m_value){
             case ACE:
                 secondCardValue = 1;
+                break;
             case TEN:
                 secondCardValue = 10;
+                break;
             case JACK:
                 secondCardValue = 11;
+                break;
             case QUEEN:
                 secondCardValue = 12;
+                break;
             case KING:
                 secondCardValue = 13;
+                break;
         }
     }
     if(firstCardValue == secondCardValue){
