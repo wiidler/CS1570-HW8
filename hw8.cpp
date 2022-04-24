@@ -49,7 +49,7 @@ int main(){
                 j=0;
             }
         }
-        cout << player1Hand[i] << " " << player2Hand;
+        cout << player1Hand[i] << " " << player2Hand[j] << endl;
         if((player1Hand[i] + player2Hand[j]) == 11){
             i++;
             j++;
