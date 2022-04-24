@@ -5,6 +5,7 @@
 Card::Card(char value, char suit){
     m_value = value;
     m_suit = suit;
+    m_destroyed = false;
 }
 // Setter Functions
 void Card::setDestroyed(){
