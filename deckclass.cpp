@@ -10,8 +10,9 @@ Deck::Deck(){
     }
 }
 Deck::Deck(Card array[], int arraySize){
-    m_deckSize = arraySize;
-    m_deck[m_deckSize] = array[arraySize];
+    for(int i; i < arraySize; i++){
+        m_deck[i] = array[i];
+    }
 }
 // Member Functions
 void Deck::shuffle(int arraySize){
