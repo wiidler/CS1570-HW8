@@ -10,6 +10,7 @@ Deck::Deck(){
     }
 }
 Deck::Deck(Card array[], int arraySize){
+    m_deckSize = arraySize;
     for(int i; i < arraySize; i++){
         m_deck[i] = array[i];
     }
@@ -30,4 +31,7 @@ Card Deck::getCard(int index){
 }
 Card Deck::getDeck(){
     return m_deck[MAXARRAY];
+}
+int Deck::getDeckSize(){
+    return m_deckSize;
 }

@@ -21,19 +21,44 @@ int main(){
     cin >> player2Name;
     Deck playDeck;
     playDeck.shuffle(MAXARRAY);
-    cout << endl << "Battle commence!" << endl;
     Card player1Hand[HALFDECK] = {};
     Card player2Hand[HALFDECK] = {};
-    for(int i = 0; i < HALFDECK; i++){
+    for(int i = 0; i < MAXARRAY; i++){
         if(!(i % 2)){
             player1Hand[i] = playDeck.getCard(i);
-            cout << player1Hand[i] << " PLAYER 1's" << endl;
         }
         else if(i % 2){
             player2Hand[i] = playDeck.getCard(i);
-            cout << player2Hand[i] << " PLAYER 2's" << endl;
         }
     }
-
+    Deck player1Deck(player1Hand, HALFDECK);
+    Deck player2Deck(player2Hand, HALFDECK);
+    cout << endl << "Battle commence!" << endl << endl;
+    int i = 0;
+    int j = 0;
+    while((player1Deck.getDeckSize() > 10) || (player2Deck.getDeckSize() > 10)){
+        while(player1Hand[i].getDestroyed()){
+            i++;
+            if (i >= player1Deck.getDeckSize()){
+                i=0;
+            }
+        }
+        while(player2Hand[j].getDestroyed()){
+            j++;
+            if (i >= player2Deck.getDeckSize()){
+                j=0;
+            }
+        }
+        cout << player1Hand[i] << " " << player2Hand;
+        if((player1Hand[i] + player2Hand[j]) == 11){
+            i++;
+            j++;
+            cout << " - Destroyed";
+        }
+        else if(player1Hand[i] > player2Hand[j]){
+            j++;
+            
+        }
+    }
     return 0;
 }

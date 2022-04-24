@@ -25,6 +25,7 @@ class Deck{
         // Getter Functions
         Card getCard(int index);
         Card getDeck();
+        int getDeckSize();
     private:
         Card m_deck[MAXARRAY];
         int m_deckSize;

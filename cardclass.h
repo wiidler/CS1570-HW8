@@ -18,7 +18,8 @@ class Card{
         // Constructors
         Card(){};
         Card(char value, char suit);
-        // Setter Functions
+        // Gettter and Setter Functions
+        bool getDestroyed();
         void setDestroyed();
         // Member Functions
         int operator+(Card & card);

@@ -7,7 +7,10 @@ Card::Card(char value, char suit){
     m_suit = suit;
     m_destroyed = false;
 }
-// Setter Functions
+// Getter and Setter Functions
+bool Card::getDestroyed(){
+    return m_destroyed;
+}
 void Card::setDestroyed(){
     m_destroyed = true;
 }
@@ -35,7 +38,7 @@ int Card::operator+(Card & card){
         return 11;
     }
     else{
-        return 17;
+        return sum;
     }
 }
 // Non-Member Functions
@@ -274,6 +277,6 @@ void Card::operator~(){
 }
 // Friend Functions
 ostream & operator<<(ostream & os, const Card & card){
-    os << card.m_value << card.m_suit << " ";
+    os << card.m_value << card.m_suit;
     return os;
 }
