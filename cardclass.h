@@ -20,7 +20,7 @@ class Card{
         Card(char value, char suit);
         // Gettter and Setter Functions
         bool getDestroyed();
-        void setDestroyed();
+        char getSuit();
         // Member Functions
         int operator+(Card & card);
         // Non-Member Functions

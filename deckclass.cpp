@@ -9,13 +9,17 @@ Deck::Deck(){
         }
     }
 }
-Deck::Deck(Card array[], int arraySize){
+Deck::Deck(Card array[], const int arraySize){
     m_deckSize = arraySize;
-    for(int i; i < arraySize; i++){
+    for(int i = 0; i < arraySize; i++){
         m_deck[i] = array[i];
     }
 }
 // Member Functions
+void Deck::destroyCard(){
+    m_deckSize -= 1;
+    return;
+}
 void Deck::shuffle(int arraySize){
     for (int i = (arraySize - 1); i > 0; i--){
         int newVal = rand() % (i + 1);

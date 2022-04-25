@@ -26,6 +26,7 @@ const int MAXARRAY = 52;
 const int SUITNUM = 4;
 const int VALUENUM = 13;
 const int HALFDECK = 26;
+const int MAXHAND = 42;
 const char SUITS[SUITNUM] = {'H', 'C', 'S', 'D'};
 const char VALUES[VALUENUM] = {'A', '2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K'};
 

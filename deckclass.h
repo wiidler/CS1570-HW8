@@ -21,13 +21,14 @@ class Deck{
         Deck();
         Deck(Card array[], int arraySize);
         // Member Functions
+        void destroyCard();
         void shuffle(int arraySize);
         // Getter Functions
         Card getCard(int index);
         Card getDeck();
         int getDeckSize();
     private:
-        Card m_deck[MAXARRAY];
         int m_deckSize;
+        Card m_deck[MAXARRAY];
 };
 #endif

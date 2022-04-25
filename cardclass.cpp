@@ -11,8 +11,8 @@ Card::Card(char value, char suit){
 bool Card::getDestroyed(){
     return m_destroyed;
 }
-void Card::setDestroyed(){
-    m_destroyed = true;
+char Card::getSuit(){
+    return m_suit;
 }
 // Member Functions
 int Card::operator+(Card & card){
@@ -33,141 +33,198 @@ int Card::operator+(Card & card){
     }
     sum = firstCardValue + secondCardValue;
     if(sum == 11){
-        m_destroyed = true;
-        card.setDestroyed();
         return 11;
     }
     else{
         return sum;
+    }
+    if(firstCardValue == secondCardValue){
+        return 11;
     }
 }
 // Non-Member Functions
 bool Card::operator>(const Card & card){
     int firstCardValue = 0;
     int secondCardValue = 0;
-    if(m_value == ACE || m_value == TEN || m_value == JACK || m_value == QUEEN || m_value == KING){
-        switch(m_value){
-            case ACE:
-                firstCardValue = 1;
-                break;
-            case TEN:
-                firstCardValue = 10;
-                break;
-            case JACK:
-                firstCardValue = 11;
-                break;
-            case QUEEN:
-                firstCardValue = 12;
-                break;
-            case KING:
-                firstCardValue = 13;
-                break;
-        }
+    switch(m_value){
+        case ACE:
+            firstCardValue = 1;
+            break;
+        case TWO:
+            firstCardValue = 2;
+            break;
+        case THREE:
+            firstCardValue = 3;
+            break;
+        case FOUR:
+            firstCardValue = 4;
+            break;
+        case FIVE:
+            firstCardValue = 5;
+            break;
+        case SIX:
+            firstCardValue = 6;
+            break;
+        case SEVEN:
+            firstCardValue = 7;
+            break;
+        case EIGHT:
+            firstCardValue = 8;
+            break;
+        case NINE:
+            firstCardValue = 9;
+            break;
+        case TEN:
+            firstCardValue = 10;
+            break;
+        case JACK:
+            firstCardValue = 11;
+            break;
+        case QUEEN:
+            firstCardValue = 12;
+            break;
+        case KING:
+            firstCardValue = 13;
+            break;
+    }
+    switch(card.m_value){
+        case ACE:
+            secondCardValue = 1;
+            break;
+        case TWO:
+            secondCardValue = 2;
+            break;
+        case THREE:
+            secondCardValue = 3;
+            break;
+        case FOUR:
+            secondCardValue = 4;
+            break;
+        case FIVE:
+            secondCardValue = 5;
+            break;
+        case SIX:
+            secondCardValue = 6;
+            break;
+        case SEVEN:
+            secondCardValue = 7;
+            break;
+        case EIGHT:
+            secondCardValue = 8;
+            break;
+        case NINE:
+            secondCardValue = 9;
+            break;
+        case TEN:
+            secondCardValue = 10;
+            break;
+        case JACK:
+            secondCardValue = 11;
+            break;
+        case QUEEN:
+            secondCardValue = 12;
+            break;
+        case KING:
+            secondCardValue = 13;
+            break;
+    } 
+    if(firstCardValue > secondCardValue){
+        return true;
     }
     else{
-        firstCardValue = m_value - '0';
-    }
-    if(card.m_value == ACE || card.m_value == TEN || card.m_value == JACK || card.m_value == QUEEN || card.m_value == KING){
-        switch(m_value){
-            case ACE:
-                secondCardValue = 1;
-                break;
-            case TEN:
-                secondCardValue = 10;
-                break;
-            case JACK:
-                secondCardValue = 11;
-                break;
-            case QUEEN:
-                secondCardValue = 12;
-                break;
-            case KING:
-                secondCardValue = 13;
-                break;
-        }
-    }
-    else{
-        secondCardValue = card.m_value - '0';
-    }   
-    if(m_suit != card.m_suit){
-        if(firstCardValue > secondCardValue){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
-    else{
-        if(firstCardValue < secondCardValue){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return false;
     }
 }
 bool Card::operator<(const Card & card){
     int firstCardValue = 0;
     int secondCardValue = 0;
-    if(m_value == ACE || m_value == TEN || m_value == JACK || m_value == QUEEN || m_value == KING){
-        switch(m_value){
-            case ACE:
-                firstCardValue = 1;
-                break;
-            case TEN:
-                firstCardValue = 10;
-                break;
-            case JACK:
-                firstCardValue = 11;
-                break;
-            case QUEEN:
-                firstCardValue = 12;
-                break;
-            case KING:
-                firstCardValue = 13;
-                break;
-        }
+    switch(m_value){
+        case ACE:
+            firstCardValue = 1;
+            break;
+        case TWO:
+            firstCardValue = 2;
+            break;
+        case THREE:
+            firstCardValue = 3;
+            break;
+        case FOUR:
+            firstCardValue = 4;
+            break;
+        case FIVE:
+            firstCardValue = 5;
+            break;
+        case SIX:
+            firstCardValue = 6;
+            break;
+        case SEVEN:
+            firstCardValue = 7;
+            break;
+        case EIGHT:
+            firstCardValue = 8;
+            break;
+        case NINE:
+            firstCardValue = 9;
+            break;
+        case TEN:
+            firstCardValue = 10;
+            break;
+        case JACK:
+            firstCardValue = 11;
+            break;
+        case QUEEN:
+            firstCardValue = 12;
+            break;
+        case KING:
+            firstCardValue = 13;
+            break;
+    }
+    switch(card.m_value){
+        case ACE:
+            secondCardValue = 1;
+            break;
+        case TWO:
+            secondCardValue = 2;
+            break;
+        case THREE:
+            secondCardValue = 3;
+            break;
+        case FOUR:
+            secondCardValue = 4;
+            break;
+        case FIVE:
+            secondCardValue = 5;
+            break;
+        case SIX:
+            secondCardValue = 6;
+            break;
+        case SEVEN:
+            secondCardValue = 7;
+            break;
+        case EIGHT:
+            secondCardValue = 8;
+            break;
+        case NINE:
+            secondCardValue = 9;
+            break;
+        case TEN:
+            secondCardValue = 10;
+            break;
+        case JACK:
+            secondCardValue = 11;
+            break;
+        case QUEEN:
+            secondCardValue = 12;
+            break;
+        case KING:
+            secondCardValue = 13;
+            break;
+    }
+    if(firstCardValue < secondCardValue){
+        return true;
     }
     else{
-        firstCardValue = m_value - '0';
-    }
-    if(card.m_value == ACE || card.m_value == TEN || card.m_value == JACK || card.m_value == QUEEN || card.m_value == KING){
-        switch(m_value){
-            case ACE:
-                secondCardValue = 1;
-                break;
-            case TEN:
-                secondCardValue = 10;
-                break;
-            case JACK:
-                secondCardValue = 11;
-                break;
-            case QUEEN:
-                secondCardValue = 12;
-                break;
-            case KING:
-                secondCardValue = 13;
-                break;
-        }
-    }
-    else{
-        secondCardValue = card.m_value - '0';
-    }   
-    if(m_suit != card.m_suit){
-        if(firstCardValue < secondCardValue){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
-    else{
-        if(firstCardValue > secondCardValue){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return false;
     }
 }
 bool Card::operator==(const Card & card){
@@ -196,7 +253,7 @@ bool Card::operator==(const Card & card){
         firstCardValue = m_value - '0';
     }
     if(card.m_value == ACE || card.m_value == TEN || card.m_value == JACK || card.m_value == QUEEN || card.m_value == KING){
-        switch(m_value){
+        switch(card.m_value){
             case ACE:
                 secondCardValue = 1;
                 break;
