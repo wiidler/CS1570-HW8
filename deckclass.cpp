@@ -17,7 +17,11 @@ Deck::Deck(Card array[], const int arraySize){
 }
 // Member Functions
 void Deck::destroyCard(){
-    m_deckSize -= 1;
+    m_deckSize--;
+    return;
+}
+void Deck::addCard(){
+    m_deckSize++;
     return;
 }
 void Deck::shuffle(int arraySize){

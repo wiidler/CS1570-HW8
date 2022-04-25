@@ -21,6 +21,7 @@ class Card{
         // Gettter and Setter Functions
         bool getDestroyed();
         char getSuit();
+        
         // Member Functions
         int operator+(Card & card);
         // Non-Member Functions
@@ -30,6 +31,7 @@ class Card{
         bool operator!=(const Card & card);
         void operator~();
         // Friend Functions
+        friend int getDestroyedIndex(Card array[MAXARRAY]);
         friend ostream & operator<<(ostream & os, const Card & card);
     private:
         char m_value;

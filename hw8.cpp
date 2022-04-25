@@ -40,9 +40,10 @@ int main(){
     cout << endl << "Battle commence!" << endl << endl;
     int i = 0;
     j = 0;
-    while((player1Deck.getDeckSize() > 10) || (player2Deck.getDeckSize() > 10)){
+    int round = 1;
+    while((player1Deck.getDeckSize() > 10) && (player2Deck.getDeckSize() > 10)){
         if(player1Hand[i].getDestroyed() || player2Hand[j].getDestroyed()){
-        // Progresses cards if current one is destroyed
+            // Progresses cards if current one is destroyed
             while(player1Hand[i].getDestroyed()){
                 i++;
                 if (i >= player1Deck.getDeckSize()){
@@ -57,7 +58,8 @@ int main(){
             }
         }
         else{
-            cout << player1Hand[i] << " " << player2Hand[j] << " ";
+            cout << "ROUND " << round << ":" << endl;
+            cout << "   " << player1Hand[i] << " " << player2Hand[j] << " ";
             // Compare cards
             if(((player1Hand[i] + player2Hand[j]) == 11) || (player1Hand[i] == player2Hand[j])){
                 player1Deck.destroyCard();
@@ -68,28 +70,59 @@ int main(){
             }
             else if(player1Hand[i].getSuit() != player2Hand[j].getSuit()){
                 if(player1Hand[i] > player2Hand[j]){
+                    if(getDestroyedIndex(player1Hand) == -1){
+                        player1Hand[player1Deck.getDeckSize()] = player2Hand[j];
+                        player1Deck.addCard();
+                    }
+                    else{
+                        player1Hand[getDestroyedIndex(player1Hand)] = player2Hand[j];
+                    }
                     player2Deck.destroyCard();
                     ~player2Hand[j];
-                    cout << player1Name << " WINS!" << endl;
+                    cout << "- " << player1Name << " wins!" << endl;
                 }
                 else if((player1Hand[i] > player2Hand[j]) ==  false){
+                    if(getDestroyedIndex(player2Hand) == -1){
+                        player2Hand[player2Deck.getDeckSize()] = player1Hand[i];
+                        player2Deck.addCard();
+                    }
+                    else{
+                        player2Hand[getDestroyedIndex(player2Hand)] = player1Hand[i];
+                    }
                     player1Deck.destroyCard();
                     ~player1Hand[i];
-                    cout << player2Name << " WINS!" << endl;
+                    cout << "- " << player2Name << " wins!" << endl;
                 }
             }
             else if(player1Hand[i].getSuit() == player2Hand[j].getSuit()){
                 if(player1Hand[i] < player2Hand[j]){
+                    cout << getDestroyedIndex(player1Hand) << endl;
+                    if(getDestroyedIndex(player1Hand) == -1){
+                        player1Hand[player1Deck.getDeckSize()] = player2Hand[j];
+                        player1Deck.addCard();
+                    }
+                    else{
+                        player1Hand[getDestroyedIndex(player1Hand)] = player2Hand[j];
+                    }
                     player2Deck.destroyCard();
                     ~player2Hand[j];
-                    cout << player1Name << " WINS!" << endl;
+                    cout << "- " << player1Name << " wins!" << endl;
                 }
                 else if((player1Hand[i] < player2Hand[j]) == false){
+                    if(getDestroyedIndex(player2Hand) == -1){
+                        player2Hand[player2Deck.getDeckSize()] = player1Hand[i];
+                        player2Deck.addCard();
+                    }
+                    else{
+                        player2Hand[getDestroyedIndex(player2Hand)] = player1Hand[i];
+                    }
                     player1Deck.destroyCard();
                     ~player1Hand[i];
-                    cout << player2Name << " WINS!" << endl;
+                    cout << "- " << player2Name << " wins!" << endl;
                 }
             }
+        round++;
+        cout << endl << "CARDS REMAINING: " << endl << "   " << player1Name << " - " << player1Deck.getDeckSize() << endl << "   " << player2Name << " - " << player2Deck.getDeckSize() << endl << endl;
         }
     }
     cout << "-GAME OVER-" << endl << endl;

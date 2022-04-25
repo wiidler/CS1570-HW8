@@ -22,6 +22,7 @@ class Deck{
         Deck(Card array[], int arraySize);
         // Member Functions
         void destroyCard();
+        void addCard();
         void shuffle(int arraySize);
         // Getter Functions
         Card getCard(int index);

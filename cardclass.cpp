@@ -333,6 +333,14 @@ void Card::operator~(){
     m_destroyed = true;
 }
 // Friend Functions
+int getDestroyedIndex(Card array[]){
+    for(int i=0; i < MAXARRAY; i++){
+        if(array[i].m_destroyed){
+            return i;
+        }
+    }
+    return -1;
+}
 ostream & operator<<(ostream & os, const Card & card){
     os << card.m_value << card.m_suit;
     return os;
