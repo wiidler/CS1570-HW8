@@ -344,6 +344,11 @@ int getDestroyedIndex(Card array[]){
     return -1;
 }
 ostream & operator<<(ostream & os, const Card & card){
-    os << card.m_value << card.m_suit;
+    if(card.m_value == TEN){
+        cout << "10" << card.m_suit;
+    } 
+    else{
+        os << card.m_value << card.m_suit;
+    }
     return os;
 }
