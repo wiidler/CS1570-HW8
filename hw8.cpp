@@ -136,6 +136,5 @@ int main(){
     else if(player2Deck.getDeckSize() <= 10){
         cout << "Congratulations " << player1Name << ", you have won! Enjoy your new country!";
     }
-    
     return 0;
 }
