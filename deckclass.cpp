@@ -26,7 +26,7 @@ void Deck::addCard(){
 }
 void Deck::shuffle(int arraySize){
     for (int i = (arraySize - 1); i > 0; i--){
-        int newVal = rand() % (i + 1);
+        int newVal = (rand() % (i + 1));
         Card temp;
         temp = m_deck[i];
         m_deck[i] = m_deck[newVal];
