@@ -21,8 +21,8 @@ int main(){
     cin >> player2Name;
     Deck playDeck;
     playDeck.shuffle(MAXARRAY);
-    Card player1Hand[MAXHAND];
-    Card player2Hand[MAXHAND];
+    Card player1Hand[MAXARRAY];
+    Card player2Hand[MAXARRAY];
     int j = 0;
     int k = 0;
     for(int i = 0; i < MAXARRAY; i++){
@@ -66,7 +66,7 @@ int main(){
                 ~player2Hand[j];
                 cout << "- Destroyed" << endl;
             }
-            else if(player1Hand[i].getSuit() != player2Hand[j].getSuit());
+            else if(player1Hand[i].getSuit() != player2Hand[j].getSuit()){
                 if(player1Hand[i] > player2Hand[j]){
                     player2Deck.destroyCard();
                     ~player2Hand[j];
@@ -77,8 +77,8 @@ int main(){
                     ~player1Hand[i];
                     cout << player2Name << " WINS!" << endl;
                 }
+            }
             else if(player1Hand[i].getSuit() == player2Hand[j].getSuit()){
-                cout << "THIS SHOULD APPEAR! please :c" << endl;
                 if(player1Hand[i] < player2Hand[j]){
                     player2Deck.destroyCard();
                     ~player2Hand[j];
