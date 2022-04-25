@@ -95,6 +95,6 @@ class Card{
     private:
         char m_value;
         char m_suit;
-        bool m_destroyed;
+        bool m_destroyed = true;
 };
 #endif
