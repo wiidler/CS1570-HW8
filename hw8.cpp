@@ -25,7 +25,7 @@ int main(){
     Card player2Hand[MAXARRAY] = {};
     for(int i = 0; i < MAXARRAY; i++){
         if((i % 2) == 0){
-            player1Hand[(i/2) - 1] = playDeck.getCard(i);
+            player1Hand[((i/2) - 1)] = playDeck.getCard(i);
         }
         else if(i % 2){
             player2Hand[i/2] = playDeck.getCard(i);
@@ -42,14 +42,16 @@ int main(){
             // Progresses cards if current one is destroyed
             while(player1Hand[i].getDestroyed()){
                 i++;
-                if (i >= player1Deck.getDeckSize()){
+                if (i > player1Deck.getDeckSize()){
                     i=0;
+                    cout << "PLAYER 1 RETURNS TO THE BEGINNING OF THEIR DECK" << endl;
                 }
             }
             while(player2Hand[j].getDestroyed()){
                 j++;
-                if (j >= player2Deck.getDeckSize()){
+                if (j > player2Deck.getDeckSize()){
                     j=0;
+                    cout << "PLAYER 2 RETURNS TO THE BEGINNING OF THEIR DECK" << endl;
                 }
             }
         }
@@ -76,7 +78,8 @@ int main(){
                     }
                     player2Deck.destroyCard();
                     ~player2Hand[j];
-                    cout << "- " << player1Name << " wins!" << endl;
+                    cout << "- " << player1Name << " wins!" << endl;\
+
                 }
                 else if((player1Hand[i] > player2Hand[j]) ==  false){
                     if(getDestroyedIndex(player2Hand) == -1){
