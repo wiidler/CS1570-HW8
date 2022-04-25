@@ -38,7 +38,7 @@ int main(){
     int j = 0;
     int round = 1;
     while((player1Deck.getDeckSize() > 10) && (player2Deck.getDeckSize() > 10)){
-        if(player1Hand[i].getDestroyed() || player2Hand[j].getDestroyed()){
+        if(player1Hand[i].getDestroyed() || player2Hand[j].getDestroyed()){ // Doesn't start a round unless two non-destroyed cards are selected
             // Progresses cards if current one is destroyed
             while(player1Hand[i].getDestroyed()){
                 i++;
@@ -53,11 +53,11 @@ int main(){
                 }
             }
         }
-        else{
+        else{ //Main game starts with two non-destroyed cards
             cout << "ROUND " << round << ":" << endl;
             cout << "   " << player1Hand[i] << " " << player2Hand[j] << " ";
             // Compare cards
-            if(((player1Hand[i] + player2Hand[j]) == 11) || (player1Hand[i] == player2Hand[j])){
+            if(((player1Hand[i] + player2Hand[j]) == 11) || (player1Hand[i].getValue() == player2Hand[j].getValue())){
                 player1Deck.destroyCard();
                 ~player1Hand[i];
                 player2Deck.destroyCard();
@@ -77,6 +77,7 @@ int main(){
                     player2Deck.destroyCard();
                     ~player2Hand[j];
                     cout << "- " << player1Name << " wins!" << endl;\
+                    i++;
 
                 }
                 else if((player1Hand[i] > player2Hand[j]) ==  false){
@@ -91,6 +92,7 @@ int main(){
                     player1Deck.destroyCard();
                     ~player1Hand[i];
                     cout << "- " << player2Name << " wins!" << endl;
+                    j++;
                 }
             }
             else if(player1Hand[i].getSuit() == player2Hand[j].getSuit()){
@@ -106,6 +108,7 @@ int main(){
                     player2Deck.destroyCard();
                     ~player2Hand[j];
                     cout << "- " << player1Name << " wins!" << endl;
+                    i++;
                 }
                 else if((player1Hand[i] < player2Hand[j]) == false){
                     if(getDestroyedIndex(player2Hand) == -1){
@@ -119,6 +122,7 @@ int main(){
                     player1Deck.destroyCard();
                     ~player1Hand[i];
                     cout << "- " << player2Name << " wins!" << endl;
+                    j++;
                 }
             }
         round++;

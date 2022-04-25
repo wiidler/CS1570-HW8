@@ -7,7 +7,67 @@ using namespace std;
 
 /***********************CLASS FUNCTION DOCUMENTATION***********************/
 
-// Function: 
+// Function: Card(){};
+// Description: 
+// Pre: 
+// Post: 
+
+// Function: Card(char value, char suit);
+// Description: 
+// Pre: 
+// Post: 
+
+// Function: bool getDestroyed() const;
+// Description: 
+// Pre: 
+// Post: 
+
+// Function: char getSuit() const;
+// Description: 
+// Pre: 
+// Post:
+
+// Function: char getValue() const;
+// Description: 
+// Pre: 
+// Post:
+
+// Function: int operator+(Card & card) const;
+// Description: 
+// Pre: 
+// Post: 
+
+// Function: bool operator>(const Card & card) const;
+// Description: 
+// Pre: 
+// Post: 
+
+// Function: bool operator<(const Card & card) const;
+// Description: 
+// Pre: 
+// Post: 
+
+// Function: bool operator==(const Card & card) const;
+// Description: 
+// Pre: 
+// Post: 
+
+// Function: bool operator!=(const Card & card) const;
+// Description: 
+// Pre: 
+// Post: 
+
+// Function: void operator~();
+// Description: 
+// Pre: 
+// Post: 
+
+// Function: friend int getDestroyedIndex(Card array[MAXARRAY]);
+// Description: 
+// Pre: 
+// Post: 
+
+// Function: friend ostream & operator<<(ostream & os, const Card & card);
 // Description: 
 // Pre: 
 // Post: 
@@ -18,17 +78,16 @@ class Card{
         // Constructors
         Card(){};
         Card(char value, char suit);
-        // Gettter and Setter Functions
-        bool getDestroyed();
-        char getSuit();
-        
-        // Member Functions
-        int operator+(Card & card);
-        // Non-Member Functions
-        bool operator>(const Card & card);
-        bool operator<(const Card & card);
-        bool operator==(const Card & card);
-        bool operator!=(const Card & card);
+        // Gettter Functions
+        bool getDestroyed() const;
+        char getSuit() const;
+        int getValue() const;
+        // Member Functions     
+        int operator+(Card & card) const;
+        bool operator>(const Card & card) const;
+        bool operator<(const Card & card) const;
+        bool operator==(const Card & card) const;
+        bool operator!=(const Card & card) const;
         void operator~();
         // Friend Functions
         friend int getDestroyedIndex(Card array[MAXARRAY]);

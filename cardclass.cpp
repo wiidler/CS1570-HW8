@@ -8,14 +8,17 @@ Card::Card(char value, char suit){
     m_destroyed = false;
 }
 // Getter and Setter Functions
-bool Card::getDestroyed(){
+bool Card::getDestroyed() const{
     return m_destroyed;
 }
-char Card::getSuit(){
+char Card::getSuit() const{
     return m_suit;
 }
+int Card::getValue() const{
+    return m_value;
+}
 // Member Functions
-int Card::operator+(Card & card){
+int Card::operator+(Card & card) const{
     int sum = 0;
     int firstCardValue = 0;
     int secondCardValue = 0;
@@ -42,8 +45,7 @@ int Card::operator+(Card & card){
         return 11;
     }
 }
-// Non-Member Functions
-bool Card::operator>(const Card & card){
+bool Card::operator>(const Card & card) const{
     int firstCardValue = 0;
     int secondCardValue = 0;
     switch(m_value){
@@ -135,7 +137,7 @@ bool Card::operator>(const Card & card){
         return false;
     }
 }
-bool Card::operator<(const Card & card){
+bool Card::operator<(const Card & card) const{
     int firstCardValue = 0;
     int secondCardValue = 0;
     switch(m_value){
@@ -227,7 +229,7 @@ bool Card::operator<(const Card & card){
         return false;
     }
 }
-bool Card::operator==(const Card & card){
+bool Card::operator==(const Card & card) const{
     int firstCardValue = 0;
     int secondCardValue = 0;
     if(m_value == ACE || m_value == TEN || m_value == JACK || m_value == QUEEN || m_value == KING){
@@ -278,7 +280,7 @@ bool Card::operator==(const Card & card){
         return false;
     }
 }
-bool Card::operator!=(const Card & card){
+bool Card::operator!=(const Card & card) const{
     int firstCardValue = 0;
     int secondCardValue = 0;
     if(m_value == ACE || m_value == TEN || m_value == JACK || m_value == QUEEN || m_value == KING){
