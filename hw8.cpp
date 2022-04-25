@@ -76,6 +76,7 @@ int main(){
                     }
                     else{
                         player1Hand[getDestroyedIndex(player1Hand)] = player2Hand[j];
+                        player1Deck.addCard();
                     }
                     player2Deck.destroyCard();
                     ~player2Hand[j];
@@ -88,6 +89,7 @@ int main(){
                     }
                     else{
                         player2Hand[getDestroyedIndex(player2Hand)] = player1Hand[i];
+                        player2Deck.addCard();
                     }
                     player1Deck.destroyCard();
                     ~player1Hand[i];
@@ -103,6 +105,7 @@ int main(){
                     }
                     else{
                         player1Hand[getDestroyedIndex(player1Hand)] = player2Hand[j];
+                        player1Deck.addCard();
                     }
                     player2Deck.destroyCard();
                     ~player2Hand[j];
@@ -115,6 +118,7 @@ int main(){
                     }
                     else{
                         player2Hand[getDestroyedIndex(player2Hand)] = player1Hand[i];
+                        player2Deck.addCard();
                     }
                     player1Deck.destroyCard();
                     ~player1Hand[i];
