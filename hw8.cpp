@@ -44,14 +44,12 @@ int main(){
                 i++;
                 if (i > player1Deck.getDeckSize()){
                     i=0;
-                    cout << "PLAYER 1 RETURNS TO THE BEGINNING OF THEIR DECK" << endl;
                 }
             }
             while(player2Hand[j].getDestroyed()){
                 j++;
                 if (j > player2Deck.getDeckSize()){
                     j=0;
-                    cout << "PLAYER 2 RETURNS TO THE BEGINNING OF THEIR DECK" << endl;
                 }
             }
         }
