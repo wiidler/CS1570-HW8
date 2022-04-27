@@ -50,12 +50,12 @@ class Deck{
         Deck();
         Deck(Card array[], int arraySize);
         // Getter Functions
-        Card getCard(int index) const;
+        Card getCard(const int index) const;
         int getDeckSize() const;
         // Member Functions
         void destroyCard();
         void addCard();
-        void shuffle(int arraySize);
+        void shuffle(const int arraySize);
     private:
         int m_deckSize;
         Card m_deck[MAXARRAY];

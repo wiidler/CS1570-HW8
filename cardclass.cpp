@@ -18,7 +18,7 @@ int Card::getValue() const{
     return m_value;
 }
 // Member Functions
-int Card::operator+(Card & card) const{
+int Card::operator+(const Card & card) const{
     int sum = 0;
     int firstCardValue = 0;
     int secondCardValue = 0;

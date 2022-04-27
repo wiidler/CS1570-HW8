@@ -17,7 +17,7 @@ Deck::Deck(Card array[], const int arraySize){
     }
 }
 // Getter Functions
-Card Deck::getCard(int index) const{
+Card Deck::getCard(const int index) const{
     return m_deck[index];
 }
 int Deck::getDeckSize() const{
@@ -32,7 +32,7 @@ void Deck::addCard(){
     m_deckSize++;
     return;
 }
-void Deck::shuffle(int arraySize){
+void Deck::shuffle(const int arraySize){
     for (int i = (arraySize - 1); i > 0; i--){
         int newVal = (rand() % (i + 1));
         Card temp;

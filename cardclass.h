@@ -83,7 +83,7 @@ class Card{
         char getSuit() const;
         int getValue() const;
         // Member Functions     
-        int operator+(Card & card) const;
+        int operator+(const Card & card) const;
         bool operator>(const Card & card) const;
         bool operator<(const Card & card) const;
         bool operator==(const Card & card) const;
