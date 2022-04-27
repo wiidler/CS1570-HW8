@@ -333,6 +333,7 @@ bool Card::operator!=(const Card & card) const{
 }
 void Card::operator~(){
     m_destroyed = true;
+    return;
 }
 // Friend Functions
 int getDestroyedIndex(Card array[]){
