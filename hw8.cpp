@@ -1,7 +1,7 @@
 // Programmer: Will Weidler
 // ID: wawq97
 // Date: 4/21/22
-// File: hw7.cpp
+// File: hw8.cpp
 // Assignment: HW 8
 // Purpose: This program contains WAR, a simple two player card game.
 
