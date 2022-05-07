@@ -1,0 +1,360 @@
+This is war!
+Input defender name:
+
+Input attacker name:
+
+Battle commence!
+
+ROUND 1:
+   8S 8H - Destroyed
+
+CARDS REMAINING: 
+   Julian - 25
+   Normo - 25
+
+ROUND 2:
+   9D AD - Normo wins!
+
+CARDS REMAINING: 
+   Julian - 24
+   Normo - 26
+
+ROUND 3:
+   KH 2H - Normo wins!
+
+CARDS REMAINING: 
+   Julian - 23
+   Normo - 27
+
+ROUND 4:
+   2D 6H - Normo wins!
+
+CARDS REMAINING: 
+   Julian - 22
+   Normo - 28
+
+ROUND 5:
+   10S 5H - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 23
+   Normo - 27
+
+ROUND 6:
+   JD 3C - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 24
+   Normo - 26
+
+ROUND 7:
+   4C 10C - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 25
+   Normo - 25
+
+ROUND 8:
+   4D AS - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 26
+   Normo - 24
+
+ROUND 9:
+   6D 3S - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 27
+   Normo - 23
+
+ROUND 10:
+   10D 9C - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 28
+   Normo - 22
+
+ROUND 11:
+   7S 4S - Destroyed
+
+CARDS REMAINING: 
+   Julian - 27
+   Normo - 21
+
+ROUND 12:
+   QD 5D - Normo wins!
+
+CARDS REMAINING: 
+   Julian - 26
+   Normo - 22
+
+ROUND 13:
+   JC 3H - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 27
+   Normo - 21
+
+ROUND 14:
+   QC 5S - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 28
+   Normo - 20
+
+ROUND 15:
+   KC 9S - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 29
+   Normo - 19
+
+ROUND 16:
+   KD 6S - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 30
+   Normo - 18
+
+ROUND 17:
+   JH QH - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 31
+   Normo - 17
+
+ROUND 18:
+   7C 5C - Normo wins!
+
+CARDS REMAINING: 
+   Julian - 30
+   Normo - 18
+
+ROUND 19:
+   8C KS - Normo wins!
+
+CARDS REMAINING: 
+   Julian - 29
+   Normo - 19
+
+ROUND 20:
+   7D 7H - Destroyed
+
+CARDS REMAINING: 
+   Julian - 28
+   Normo - 18
+
+ROUND 21:
+   JS 9D - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 29
+   Normo - 17
+
+ROUND 22:
+   9H AD - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 30
+   Normo - 16
+
+ROUND 23:
+   8D 2H - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 31
+   Normo - 15
+
+ROUND 24:
+   2C 6H - Normo wins!
+
+CARDS REMAINING: 
+   Julian - 30
+   Normo - 16
+
+ROUND 25:
+   2S QD - Normo wins!
+
+CARDS REMAINING: 
+   Julian - 29
+   Normo - 17
+
+ROUND 26:
+   3S 7C - Normo wins!
+
+CARDS REMAINING: 
+   Julian - 28
+   Normo - 18
+
+ROUND 27:
+   9C 8C - Normo wins!
+
+CARDS REMAINING: 
+   Julian - 27
+   Normo - 19
+
+ROUND 28:
+   9S 9C - Destroyed
+
+CARDS REMAINING: 
+   Julian - 26
+   Normo - 18
+
+ROUND 29:
+   5H 5D - Destroyed
+
+CARDS REMAINING: 
+   Julian - 25
+   Normo - 17
+
+ROUND 30:
+   3C 5C - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 26
+   Normo - 16
+
+ROUND 31:
+   10C 2C - Normo wins!
+
+CARDS REMAINING: 
+   Julian - 25
+   Normo - 17
+
+ROUND 32:
+   AS 2S - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 26
+   Normo - 16
+
+ROUND 33:
+   10S 3S - Normo wins!
+
+CARDS REMAINING: 
+   Julian - 25
+   Normo - 17
+
+ROUND 34:
+   JD 6H - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 26
+   Normo - 16
+
+ROUND 35:
+   4C QD - Normo wins!
+
+CARDS REMAINING: 
+   Julian - 25
+   Normo - 17
+
+ROUND 36:
+   4D 7C - Destroyed
+
+CARDS REMAINING: 
+   Julian - 24
+   Normo - 16
+
+ROUND 37:
+   6D 8C - Normo wins!
+
+CARDS REMAINING: 
+   Julian - 23
+   Normo - 17
+
+ROUND 38:
+   10D 10C - Destroyed
+
+CARDS REMAINING: 
+   Julian - 22
+   Normo - 16
+
+ROUND 39:
+   3H 2C - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 23
+   Normo - 15
+
+ROUND 40:
+   5S 10S - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 24
+   Normo - 14
+
+ROUND 41:
+   JC 3S - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 25
+   Normo - 13
+
+ROUND 42:
+   QC 4C - Normo wins!
+
+CARDS REMAINING: 
+   Julian - 24
+   Normo - 14
+
+ROUND 43:
+   KC QD - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 25
+   Normo - 13
+
+ROUND 44:
+   KD 6D - Normo wins!
+
+CARDS REMAINING: 
+   Julian - 24
+   Normo - 14
+
+ROUND 45:
+   JH 8C - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 25
+   Normo - 13
+
+ROUND 46:
+   9D QC - Normo wins!
+
+CARDS REMAINING: 
+   Julian - 24
+   Normo - 14
+
+ROUND 47:
+   AD KD - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 25
+   Normo - 13
+
+ROUND 48:
+   2H 9D - Destroyed
+
+CARDS REMAINING: 
+   Julian - 24
+   Normo - 12
+
+ROUND 49:
+   JS 4C - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 25
+   Normo - 11
+
+ROUND 50:
+   9H 6D - Julian wins!
+
+CARDS REMAINING: 
+   Julian - 26
+   Normo - 10
+
+-GAME OVER-
+
+Congratulations Julian, you have won! Enjoy your new country!

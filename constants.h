@@ -4,8 +4,10 @@
 #include <iostream>
 using namespace std;
 
+// Now this is great, everyone should be doing this
+
 /***********************CONSTANTS***********************/
-const char ACE = 'A'; 
+const char ACE = 'A';
 const char TWO = '2';
 const char THREE = '3';
 const char FOUR = '4';
